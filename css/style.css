@@ -131,6 +131,7 @@
 .heder__select-list {
   position: absolute;
   opacity: 0;
+  border-radius: 5px;
   display: block !important;
   pointer-events: none;
   -webkit-transition: 0.3s;
@@ -2398,24 +2399,15 @@
   .cases__title-main {
     font-size: 18px;
   }
+  .cases__item:hover .cases__hover {
+    opacity: 1;
+  }
   .cases__visible {
     padding: 10px;
     min-width: 100px;
     min-height: 100px;
     width: 150px;
-  }
-  .cases__visible:hover ~ .cases__hover {
-    -webkit-transition: opacity 0.3s 0s,
- -webkit-transform 0s;
-    transition: opacity 0.3s 0s,
- -webkit-transform 0s;
-    transition: transform 0s,
- opacity 0.3s 0s;
-    transition: transform 0s,
- opacity 0.3s 0s,
- -webkit-transform 0s;
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    pointer-events: none;
   }
   .cases__subtitle {
     font-size: 10px;
@@ -2442,17 +2434,6 @@
   }
   .cases__hover {
     padding: 10px;
-    -webkit-transition: opacity 0.3s 0s,
- -webkit-transform 0s 0.3s;
-    transition: opacity 0.3s 0s,
- -webkit-transform 0s 0.3s;
-    transition: transform 0s 0.3s,
- opacity 0.3s 0s;
-    transition: transform 0s 0.3s,
- opacity 0.3s 0s,
- -webkit-transform 0s 0.3s;
-    -webkit-transform: scale(0);
-            transform: scale(0);
   }
   .cases__hover-price {
     font-size: 12px;
@@ -2964,6 +2945,7 @@
 
 .popup__select-list {
   position: absolute;
+  border-radius: 10px;
   z-index: 12;
   bottom: -5px;
   left: 0;
