@@ -719,7 +719,7 @@
   left: 0;
   background: #262c33;
   border: 1px solid #2e343b;
-  padding: 26px 20px 0 20px;
+  padding: 26px 0 0 0;
   -webkit-transition: 0.3s;
   transition: 0.3s;
   opacity: 0;
@@ -728,6 +728,7 @@
 
 .heder__profile-select .heder__profile {
   margin-bottom: 25px;
+  padding: 0 20px;
 }
 
 .heder__profile-select .heder__profile-content {
@@ -760,7 +761,7 @@
   font-size: 14px;
   font-family: "OpenSansSemiBold";
   text-transform: uppercase;
-  padding: 7px 0;
+  padding: 7px 20px;
   -webkit-transition: 0.2s;
   transition: 0.2s;
 }
@@ -908,6 +909,26 @@
 
 .heder__drop-infos .heder__drop-info:last-child .heder__drop-icon {
   margin-top: -2px;
+}
+
+.heder__drop-infos .heder__drop-info:first-child .heder__drop-icon {
+  -webkit-filter: drop-shadow(0px 0px 15px #30da68);
+          filter: drop-shadow(0px 0px 15px #30da68);
+}
+
+.heder__drop-infos .heder__drop-info:first-child .heder__drop-icon svg {
+  -webkit-filter: drop-shadow(0px 0px 5px #30da68);
+          filter: drop-shadow(0px 0px 5px #30da68);
+}
+
+.heder__drop-infos .heder__drop-info:last-child .heder__drop-icon {
+  -webkit-filter: drop-shadow(0px 0px 15px #ff4b55);
+          filter: drop-shadow(0px 0px 15px #ff4b55);
+}
+
+.heder__drop-infos .heder__drop-info:last-child .heder__drop-icon svg {
+  -webkit-filter: drop-shadow(0px 0px 5px #ff4b55);
+          filter: drop-shadow(0px 0px 5px #ff4b55);
 }
 
 .heder__drop-info {
@@ -1884,7 +1905,8 @@
 
 .login__left {
   padding: 55px 50px 55px 33px;
-  background-image: url("../img/bg-auth.png");
+  background-image: url("../img/bg-auth.png"), -webkit-gradient(linear, left top, left bottom, from(rgba(248, 103, 31, 0.1)), color-stop(60%, transparent));
+  background-image: url("../img/bg-auth.png"), linear-gradient(180deg, rgba(248, 103, 31, 0.1), transparent 60%);
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -1926,6 +1948,8 @@
 
 .login__right {
   padding: 62px 42px 49px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(250, 193, 14, 0.1)), color-stop(60%, transparent));
+  background-image: linear-gradient(-180deg, rgba(250, 193, 14, 0.1), transparent 60%);
 }
 
 .login__logo {
@@ -2380,6 +2404,19 @@
     min-height: 100px;
     width: 150px;
   }
+  .cases__visible:hover ~ .cases__hover {
+    -webkit-transition: opacity 0.3s 0s,
+ -webkit-transform 0s;
+    transition: opacity 0.3s 0s,
+ -webkit-transform 0s;
+    transition: transform 0s,
+ opacity 0.3s 0s;
+    transition: transform 0s,
+ opacity 0.3s 0s,
+ -webkit-transform 0s;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
   .cases__subtitle {
     font-size: 10px;
   }
@@ -2405,6 +2442,17 @@
   }
   .cases__hover {
     padding: 10px;
+    -webkit-transition: opacity 0.3s 0s,
+ -webkit-transform 0s 0.3s;
+    transition: opacity 0.3s 0s,
+ -webkit-transform 0s 0.3s;
+    transition: transform 0s 0.3s,
+ opacity 0.3s 0s;
+    transition: transform 0s 0.3s,
+ opacity 0.3s 0s,
+ -webkit-transform 0s 0.3s;
+    -webkit-transform: scale(0);
+            transform: scale(0);
   }
   .cases__hover-price {
     font-size: 12px;
@@ -2531,6 +2579,9 @@
     padding-bottom: 15px;
     margin-bottom: 0;
   }
+  .foter__nav {
+    margin-bottom: 20px;
+  }
   .foter__nav-list {
     padding-top: 15px;
     -webkit-column-gap: 12px;
@@ -2644,6 +2695,9 @@
   .menu .heder__nav-link {
     width: 100%;
   }
+  .menu .heder__nav-exit {
+    margin-top: 10px;
+  }
   .menu .heder__nav-link a {
     padding: 10px 20px;
     border-top: 1px solid #232930;
@@ -2703,8 +2757,16 @@
 
 @media screen and (max-width: 500px) {
   .heder__logo {
-    width: 100px;
+    width: 100%;
+    max-width: 160px;
     margin-top: 7px;
+  }
+  .heder__top {
+    -webkit-column-gap: 30px;
+            column-gap: 30px;
+  }
+  .heder__login {
+    white-space: nowrap;
   }
   .heder__notification-block {
     padding: 10px 0 10px 10px;
