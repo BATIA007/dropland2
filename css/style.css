@@ -7,6 +7,7 @@
 
 .heder {
   background: #191e24;
+  overflow: hidden;
 }
 
 .heder__top {
@@ -1805,20 +1806,30 @@
           transform: scale(0);
   opacity: 0;
   overflow-y: auto;
-  -webkit-transition: opacity 0.4s, -webkit-transform 0s 0.4s;
-  transition: opacity 0.4s, -webkit-transform 0s 0.4s;
-  transition: transform 0s 0.4s, opacity 0.4s;
-  transition: transform 0s 0.4s, opacity 0.4s, -webkit-transform 0s 0.4s;
+  -webkit-transition: opacity 0.4s,
+ -webkit-transform 0s 0.4s;
+  transition: opacity 0.4s,
+ -webkit-transform 0s 0.4s;
+  transition: transform 0s 0.4s,
+ opacity 0.4s;
+  transition: transform 0s 0.4s,
+ opacity 0.4s,
+ -webkit-transform 0s 0.4s;
 }
 
 .login-active {
   -webkit-transform: scale(1);
           transform: scale(1);
   opacity: 1;
-  -webkit-transition: opacity 0.4s, -webkit-transform 0s;
-  transition: opacity 0.4s, -webkit-transform 0s;
-  transition: transform 0s, opacity 0.4s;
-  transition: transform 0s, opacity 0.4s, -webkit-transform 0s;
+  -webkit-transition: opacity 0.4s,
+ -webkit-transform 0s;
+  transition: opacity 0.4s,
+ -webkit-transform 0s;
+  transition: transform 0s,
+ opacity 0.4s;
+  transition: transform 0s,
+ opacity 0.4s,
+ -webkit-transform 0s;
 }
 
 .login__close {
@@ -2101,7 +2112,8 @@
     display: grid;
     row-gap: 20px;
     margin-bottom: 30px;
-        grid-template-areas: "a b c e" "d d d d";
+        grid-template-areas: "a b c e"
+ "d d d d";
   }
   .foter__logo-link {
     -ms-grid-row: 1;
@@ -2445,7 +2457,9 @@
     row-gap: 20px;
     -webkit-column-gap: 0px;
             column-gap: 0px;
-        grid-template-areas: "a a b b" "c e e e" "d d d d";
+        grid-template-areas: "a a b b"
+ "c e e e"
+ "d d d d";
   }
   .foter__privacy, .foter__follow-text {
     font-size: 12px;
@@ -2545,19 +2559,29 @@
             transform: scale(0);
     opacity: 0;
     overflow-y: auto;
-    -webkit-transition: opacity 0.4s, -webkit-transform 0s 0.4s;
-    transition: opacity 0.4s, -webkit-transform 0s 0.4s;
-    transition: transform 0s 0.4s, opacity 0.4s;
-    transition: transform 0s 0.4s, opacity 0.4s, -webkit-transform 0s 0.4s;
+    -webkit-transition: opacity 0.4s,
+ -webkit-transform 0s 0.4s;
+    transition: opacity 0.4s,
+ -webkit-transform 0s 0.4s;
+    transition: transform 0s 0.4s,
+ opacity 0.4s;
+    transition: transform 0s 0.4s,
+ opacity 0.4s,
+ -webkit-transform 0s 0.4s;
   }
   .menu-active {
     -webkit-transform: scale(1);
             transform: scale(1);
     opacity: 1;
-    -webkit-transition: opacity 0.4s, -webkit-transform 0s;
-    transition: opacity 0.4s, -webkit-transform 0s;
-    transition: transform 0s, opacity 0.4s;
-    transition: transform 0s, opacity 0.4s, -webkit-transform 0s;
+    -webkit-transition: opacity 0.4s,
+ -webkit-transform 0s;
+    transition: opacity 0.4s,
+ -webkit-transform 0s;
+    transition: transform 0s,
+ opacity 0.4s;
+    transition: transform 0s,
+ opacity 0.4s,
+ -webkit-transform 0s;
   }
   .menu__top {
     display: -webkit-box;
@@ -2729,20 +2753,30 @@
           transform: scale(0);
   opacity: 0;
   overflow-y: auto;
-  -webkit-transition: opacity 0.4s, -webkit-transform 0s 0.4s;
-  transition: opacity 0.4s, -webkit-transform 0s 0.4s;
-  transition: transform 0s 0.4s, opacity 0.4s;
-  transition: transform 0s 0.4s, opacity 0.4s, -webkit-transform 0s 0.4s;
+  -webkit-transition: opacity 0.4s,
+ -webkit-transform 0s 0.4s;
+  transition: opacity 0.4s,
+ -webkit-transform 0s 0.4s;
+  transition: transform 0s 0.4s,
+ opacity 0.4s;
+  transition: transform 0s 0.4s,
+ opacity 0.4s,
+ -webkit-transform 0s 0.4s;
 }
 
 .popup-active {
   -webkit-transform: scale(1);
           transform: scale(1);
   opacity: 1;
-  -webkit-transition: opacity 0.4s, -webkit-transform 0s;
-  transition: opacity 0.4s, -webkit-transform 0s;
-  transition: transform 0s, opacity 0.4s;
-  transition: transform 0s, opacity 0.4s, -webkit-transform 0s;
+  -webkit-transition: opacity 0.4s,
+ -webkit-transform 0s;
+  transition: opacity 0.4s,
+ -webkit-transform 0s;
+  transition: transform 0s,
+ opacity 0.4s;
+  transition: transform 0s,
+ opacity 0.4s,
+ -webkit-transform 0s;
 }
 
 .popup__close {
@@ -2872,17 +2906,27 @@
   opacity: 0;
   -webkit-transform: translateY(100%) scale(0);
           transform: translateY(100%) scale(0);
-  -webkit-transition: opacity 0.3s, -webkit-transform 0s 0.3s;
-  transition: opacity 0.3s, -webkit-transform 0s 0.3s;
-  transition: transform 0s 0.3s, opacity 0.3s;
-  transition: transform 0s 0.3s, opacity 0.3s, -webkit-transform 0s 0.3s;
+  -webkit-transition: opacity 0.3s,
+ -webkit-transform 0s 0.3s;
+  transition: opacity 0.3s,
+ -webkit-transform 0s 0.3s;
+  transition: transform 0s 0.3s,
+ opacity 0.3s;
+  transition: transform 0s 0.3s,
+ opacity 0.3s,
+ -webkit-transform 0s 0.3s;
 }
 
 .popup__select-active .popup__select-list {
-  -webkit-transition: opacity 0.3s, -webkit-transform 0s;
-  transition: opacity 0.3s, -webkit-transform 0s;
-  transition: transform 0s, opacity 0.3s;
-  transition: transform 0s, opacity 0.3s, -webkit-transform 0s;
+  -webkit-transition: opacity 0.3s,
+ -webkit-transform 0s;
+  transition: opacity 0.3s,
+ -webkit-transform 0s;
+  transition: transform 0s,
+ opacity 0.3s;
+  transition: transform 0s,
+ opacity 0.3s,
+ -webkit-transform 0s;
   opacity: 1;
   -webkit-transform: translateY(100%) scale(1);
           transform: translateY(100%) scale(1);
@@ -3979,7 +4023,8 @@
   .popup__amount {
     display: -ms-grid;
     display: grid;
-        grid-template-areas: "a b" "c c";
+        grid-template-areas: "a b"
+ "c c";
     row-gap: 20px;
   }
   .popup__amount-img {
